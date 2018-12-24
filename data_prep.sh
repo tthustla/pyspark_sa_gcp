@@ -19,7 +19,7 @@ python train_test_split.py
 # delete temporary directory and the files in it
 rm -rf temp
 # upload training_data and test_data created by train_test_split.py to Google Cloud Storage
-gsutil cp pyspark_sa_train_data.csv gs://${BUCKET_NAME}/pyspark_nlp/data/training_data.csv
-gsutil cp pyspark_sa_test_data.csv gs://${BUCKET_NAME}/pyspark_nlp/data/test_data.csv
+gsutil cp pyspark_sa_train_data.csv gs://${PROJECT_ID}/pyspark_nlp/data/training_data.csv
+gsutil cp pyspark_sa_test_data.csv gs://${PROJECT_ID}/pyspark_nlp/data/test_data.csv
 # remove the training_data and test_data after uploading
 rm pyspark_sa_train_data.csv pyspark_sa_test_data.csv
